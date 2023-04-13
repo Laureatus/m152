@@ -12,10 +12,25 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
+		<script>
+			function acceptCookies() {
+				document.cookie = "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/index.html";
+				document.cookie = "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
+				document.getElementById("cookie-notice").style.display = "none";
+			}
+	
+			function checkCookies() {
+				if (document.cookie.indexOf("cookies_accepted=true") >= 0) {
+					document.getElementById("cookie-notice").style.display = "none";
+				}
+			}
+	
+			window.onload = checkCookies;
+		</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
-
+			
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
@@ -25,6 +40,11 @@
 								</header>
 
 							<!-- Banner -->
+							<div id="cookie-notice">
+								Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. 
+								<a href="/datenschutz.html">Mehr erfahren</a>
+								<button onclick="acceptCookies()">Akzeptieren</button>
+							</div>
 								<section id="banner">
 									<div class="content">
 										<header>
@@ -117,6 +137,7 @@
 										<li><a href="styleguide.html">Styleguide</a></li>
 										<li><a href="urheberrecht.html">Urheberrecht</a></li>
 										<li><a href="copyright.html">Copyright</a></li>
+										<li><a href="impressum.html">Impressum</a></li>
 									</ul>
 								</nav>
 

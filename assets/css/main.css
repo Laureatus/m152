@@ -2271,3 +2271,20 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+    #cookie-notice {
+      background-color: #f8d7da;
+      color: #721c24;
+      padding: 10px;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
+  }
+
+  #cookie-notice a {
+      color: #721c24;
+      font-weight: bold;
+      text-decoration: underline;
+  } 
