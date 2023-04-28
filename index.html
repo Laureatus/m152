@@ -17,34 +17,35 @@
 				document.cookie = "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/index.html";
 				document.cookie = "cookies_accepted=true; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
 				document.getElementById("cookie-notice").style.display = "none";
+				location.reload()
 			}
-	
 			function checkCookies() {
 				if (document.cookie.indexOf("cookies_accepted=true") >= 0) {
 					document.getElementById("cookie-notice").style.display = "none";
+					document.getElementById("wrapper").style.opacity = "1"
 				}
+				
 			}
-	
 			window.onload = checkCookies;
 		</script>
 
+			<div id="cookie-notice">
+				Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. 
+				<a href="/datenschutz.html">Mehr erfahren</a>
+				<button onclick="acceptCookies()">Akzeptieren</button>
+			</div>
 		<!-- Wrapper -->
-			<div id="wrapper">
-			
+			<div id="wrapper" style="opacity: 0.1;">
 				<!-- Main -->
 					<div id="main">
 						<div class="inner">
 							<!-- Header -->
 								<header id="header">
 									<h1>Erklärseite M152</h1>
+									
 								</header>
 
 							<!-- Banner -->
-							<div id="cookie-notice">
-								Diese Website verwendet Cookies, um Ihnen das bestmögliche Nutzererlebnis zu bieten. 
-								<a href="/datenschutz.html">Mehr erfahren</a>
-								<button onclick="acceptCookies()">Akzeptieren</button>
-							</div>
 								<section id="banner">
 									<div class="content">
 										<header>
