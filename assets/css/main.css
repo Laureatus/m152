@@ -2288,3 +2288,100 @@ button,
       font-weight: bold;
       text-decoration: underline;
   } 
+
+  /*Animations*/
+  #wrapper-1 {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%; }
+    #wrapper-1 h2 {
+      margin: 0 0 0 0;
+      padding: 0 0 0 0;
+      font-family: Roboto;
+      font-size: 2rem; 
+      color: #fFF;}
+    #wrapper-1 .element-1 {
+      width: 25rem;
+      height: 15rem;
+      background-color: #929292;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      transition: all 250ms ease;
+      position: relative; }
+
+      #wrapper-1 .element-1.effekt-1:hover {
+        box-shadow: inset 0 0 0 0.5rem #FF6E48; }
+
+ /*Animations 2*/
+ #wrapper-2 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  #wrapper-2 h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: Roboto;
+    font-size: 2rem; 
+    color: #fFF;}
+  #wrapper-2 .element-2 {
+    width: 25rem;
+    height: 15rem;
+    background-color: #929292;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease;
+    position: relative; }
+
+    #wrapper-2 .element-2.effekt-2:hover {
+      border-radius: 2rem; }
+
+ /*Animations 3*/
+ #wrapper-3 {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%; }
+  #wrapper-3 h2 {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: Roboto;
+    font-size: 2rem; 
+    color: #fFF;}
+  #wrapper-3 .element-3 {
+    width: 25rem;
+    height: 15rem;
+    background-color: #929292;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 250ms ease;
+    position: relative; }
+
+    #wrapper-3 .element-3::after {
+      transition: all 250ms ease;
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 0.2rem;
+      background-color: #FF6E48; }
+      #wrapper-3 .element-3.effekt-3:hover::after {
+        width: 100%; }
+
+
+
