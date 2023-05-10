@@ -31,6 +31,34 @@
 										<h1>Scroll Animations</h1>
 									</header>
 								</section>  
+                                <div class="scroll-line"></div>
+
+    <div class="conatainer">
+      <div class="content">
+        <h1>Scroll to see</h1>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur, voluptatibus? Adipisci aperiam explicabo, eligendi ea at fugiat porro unde dignissimos ipsum tenetur rem veritatis quidem velit? Dignissimos reprehenderit dolore exercitationem, officiis praesentium, quidem quas suscipit fugiat fugit incidunt iste, minima voluptatibus earum perspiciatis saepe? Beatae iusto ab assumenda inventore sit.
+        
+      </div>
+    </div>
+    <script>
+        const scrollline = document.querySelector('.scroll-line');
+
+function fillscrollline(){
+  const windowHeight = window.innerHeight;
+  const fullHeight = document.body.clientHeight;
+  const scrolled = window.scrollY;
+  const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
+
+  scrollline.style.width = percentScrolled + '%';
+};
+
+window.addEventListener('scroll', fillscrollline);
+    </script>
 
 						</div>
 					</div>
