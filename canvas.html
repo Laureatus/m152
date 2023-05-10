@@ -83,6 +83,24 @@
                                             ctx.stroke();
                                         </script>
                                     </canvas>
+                                    <hr class="major">
+                                    <h4>Zeichnen von Text</h4>
+                                    <br>
+                                    <code>
+                                        var c = document.getElementById("myCanvas"); <br>
+                                        var ctx = c.getContext("2d"); <br>
+                                        ctx.font = "30px Arial"; <br>
+                                        ctx.fillText("Hello World", 10, 50); <br>
+                                    </code>
+                                    <br>
+                                    <canvas id="textCanvas" width="200" height="100" style="border:1px solid #000000;">
+                                        <script>
+                                            var c = document.getElementById("textCanvas");
+                                            var ctx = c.getContext("2d");
+                                            ctx.font = "30px Arial";
+                                            ctx.fillText("Hello World", 10, 50);
+                                            </script>
+                                    </canvas>
 								</section>  
 
 						</div>
