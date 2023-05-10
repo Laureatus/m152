@@ -30,6 +30,59 @@
 									<header class="main">
 										<h1>Canvas</h1>
 									</header>
+                                    <p>HTML Canvas kann verwendet werden um mit Javascript Grafiken auf einer Website zu Zeichen.</p>
+                                    <p>Beispiele:</p>
+
+                                    <h4>Rechteck</h4>
+                                    <br>
+                                    <code>
+                                        id="myCanvas" width="200" height="100" style="border:1px solid #000000;
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                                    </canvas>
+                                    <p>Dies ist ein simples Beispiel für eine Canvas. Innerhalb dieser Kann nun mit JavaScript Code gezeichnet werden.</p>
+                                    <hr class="major">
+                                    <h4>Zeichnen von linien</h4>
+                                    <br>
+                                    <code>
+                                            var c = document.getElementById("myCanvas"); <br>
+                                            var ctx = c.getContext("2d"); <br>
+                                            ctx.moveTo(0, 0); <br>
+                                            ctx.lineTo(200, 100); <br>
+                                            ctx.stroke(); <br>
+                                    </code>
+                                    <br>
+                                    <canvas id="lineCanvas" width="200" height="100" style="border:1px solid #000000;">
+                                        <script>
+                                            var c = document.getElementById("lineCanvas");
+                                            var ctx = c.getContext("2d");
+                                            ctx.moveTo(0, 0);
+                                            ctx.lineTo(200, 100);
+                                            ctx.stroke();
+                                            </script>
+                                    </canvas>
+                                    <hr class="major">
+                                    <h4>Zeichnen von Kreisen</h4>
+                                    <br>
+                                    <code>
+                                        var c = document.getElementById("myCanvas"); <br>
+                                        var ctx = c.getContext("2d"); <br>
+                                        ctx.beginPath(); <br>
+                                        ctx.arc(95, 50, 40, 0, 2 * Math.PI); <br>
+                                        ctx.stroke(); <br>
+                                    </code>
+                                    <br>
+                                    <canvas id="circleCanvas" width="200" height="100" style="border:1px solid #000000;">
+                                        <script>
+                                            var c = document.getElementById("circleCanvas");
+                                            var ctx = c.getContext("2d");
+                                            ctx.beginPath();
+                                            ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+                                            ctx.stroke();
+                                        </script>
+                                    </canvas>
 								</section>  
 
 						</div>
