@@ -2383,5 +2383,16 @@ button,
       #wrapper-3 .element-3.effekt-3:hover::after {
         width: 100%; }
 
+#blue-car { position: absolute;}
+#bluecarcheck:checked ~ #blue-car { 
+  animation-name: Wait-And-Start;
+  animation-duration: 4s;
+  animation-delay: 2s; 
+  animation-fill-mode: forwards;
+}
+@keyframes Wait-And-Start {
+  from { transform: translateX(0) }
+  to   { transform: translateX(200%) }
+}
 
 

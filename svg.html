@@ -30,8 +30,147 @@
 									<header class="main">
 										<h1>SVG</h1>
 									</header>
-								</section>  
-
+                                    <p>SVG Sind Vektorgrafiken, welche im XML Format abgespeichert werden. Der Vorteil von SVG ist, dass sie durch ihre speicherungsmethode sehr wenig speicherplatz verbrauchen und beliebig skaliert werden können ohne an qualität zu verlieren.</p>
+                                    <br>
+                                    <p>Es gibt verschieden Methoden wie SVG Grafiken dargestellt werden können.</p>
+                                    <hr class="major">
+                                    <h3>Kreis</h3>
+                                    <code>cx - die mittlere x Koordinate</code>
+                                    <br>
+                                    <code>cy - die mittlere y Koordinate</code>
+                                    <br>
+                                    <code>r - der Radius des Kreises</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="100" height="100">
+                                        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Ellipse</h3>
+                                    <code>cx - die mittlere x Koordinate</code>
+                                    <br>
+                                    <code>cy - die mittlere y Koordinate</code>
+                                    <br>
+                                    <code>rx - der horizontale Radius des Ellipse</code>
+                                    <br>
+                                    <code>ry - der vertikale Radius des Ellipse</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        ellipse cx="50" cy="50" rx="50" ry="25"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="100" height="100">
+                                        <ellipse cx="50" cy="50" rx="50" ry="25" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Rechteck</h3>
+                                    <code>x - die koordinate der linken obere Ecke</code>
+                                    <br>
+                                    <code>y - die koordinate der linken obere Ecke</code>
+                                    <br>
+                                    <code>width - die breite des Rechtecks</code>
+                                    <br>
+                                    <code>height - die höhe des Rechtecks</code>
+                                    <br>
+                                    <code>rx - der horizontale Radius des Rechtecks</code>
+                                    <br>
+                                    <code>ry - der vertikale Radius des Rechtecks</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        rect x="0" y="0" width="256" height="64" rx="5" ry="5"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="100" height="100">
+                                        <rect x="0" y="0" width="90" height="64" rx="5" ry="5" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Polygon</h3>
+                                    <code>points - definiert die eckpunkte der Form im x,y x,y Format</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        <!-- Dreieck -->
+                                        polygon points="128,0 256,256 0,256"
+                                        <!-- Hexagon -->
+                                        polygon points="60,20 100,40 100,80 60,100 20,80 20,40"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="300" height="300">
+                                        <polygon points="60,20 100,40 100,80 60,100 20,80 20,40" />
+                                    </svg>
+                                    <svg width="300" height="300">
+                                        <polygon points="128,0 256,256 0,256" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Linien</h3>
+                                    <code>x1 -  Die X start koordinate</code>
+                                    <br>
+                                    <code>y1 -  Die Y start koordinate</code>
+                                    <br>
+                                    <code>x1 -  Die X end koordinate</code>
+                                    <br>
+                                    <code>y1 -  Die Y end koordinate</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        line x1="0" y1="0" x2="256" y2="256"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="300" height="300">
+                                        <line x1="0" y1="0" x2="256" y2="256" stroke="black" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Polylines</h3>
+                                    <code>points - definiert die eckpunkte der Linie im x,y x,y Format</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        polyline points="0,256 50,150 100,100 150,50"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="300" height="300">
+                                        <polyline points="0,256 50,150 100,100 150,50" />
+                                    </svg>
+                                    <hr class="major">
+                                    <h3>Paths</h3>
+                                    <code>d - Koordinaten zum bestimmen der Punkte des Pfades</code>
+                                    <br>
+                                    <br>
+                                    <br>
+                                    <p>Beispiel:</p>
+                                    <code>
+                                        path d="M100,160 Q128,190 156,160"
+                                    </code>
+                                    <br>
+                                    <br>
+                                    <svg width="300" height="300">
+                                        <path d="M190,120 Q148,197 256,180" />
+                                    </svg>
+								</section>
 						</div>
 					</div>
 
